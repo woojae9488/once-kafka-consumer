@@ -1,0 +1,12 @@
+spring:
+    profiles:
+        include:
+            - kafka
+            - swagger
+
+    application:
+        name: once-kafka-consumer
+
+server:
+    forward-headers-strategy: native
+    port: 8010

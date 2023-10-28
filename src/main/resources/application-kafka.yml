@@ -1,0 +1,12 @@
+spring:
+    kafka:
+        consumer:
+            bootstrap-servers: localhost:9092
+            max-poll-records: 10
+            group-id: once-consumer
+            enable-auto-commit: false
+            auto-offset-reset: latest
+        listener:
+            ack-mode: MANUAL_IMMEDIATE
+            concurrency: 3
+            idle-event-interval: 10s

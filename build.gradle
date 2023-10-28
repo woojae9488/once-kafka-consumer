@@ -1,14 +1,14 @@
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '2.7.17'
-    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "java"
+    id "org.springframework.boot" version "2.7.17"
+    id "io.spring.dependency-management" version "1.0.15.RELEASE"
 }
 
-group = 'com.kwj.spring.kafka'
-version = '0.0.1-SNAPSHOT'
+group = "com.kwj.spring.kafka"
+version = "0.0.1-SNAPSHOT"
 
 java {
-    sourceCompatibility = '11'
+    sourceCompatibility = "11"
 }
 
 configurations {
@@ -29,22 +29,23 @@ ext {
 
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-validation"
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.kafka:spring-kafka'
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.kafka:spring-kafka"
+    implementation "org.springframework.kafka:spring-kafka-test"
 
     implementation "org.apache.commons:commons-lang3:$commons_lang3_version"
     implementation "org.apache.commons:commons-collections4:$commons_collections4_version"
     implementation "org.springdoc:springdoc-openapi-ui:$springdoc_openapi_version"
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.kafka:spring-kafka-test'
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.kafka:spring-kafka-test"
 
-    testCompileOnly 'org.projectlombok:lombok'
-    testAnnotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly "org.projectlombok:lombok"
+    testAnnotationProcessor "org.projectlombok:lombok"
 }
 
 test {

@@ -1,0 +1,10 @@
+springdoc:
+    default-produces-media-type: application/json
+    paths-to-match:
+        - /api/**
+    swagger-ui:
+        disable-swagger-default-url: true
+        doc-expansion: none
+        operations-sorter: method
+        tags-sorter: alpha
+        path: /swagger-ui.html
