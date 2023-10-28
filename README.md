@@ -1,2 +1,2 @@
-# spring-kafka-trigger-consumer
-Kafka Trigger Consumer for Spring-Kafka
+# once-kafka-consumer
+Once Kafka Consumer for Spring-Kafka
